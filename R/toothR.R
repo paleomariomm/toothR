@@ -40,7 +40,6 @@ toothR <- function(image_url, tooth_type = c("UI", "UC", "UP", "UM", "LI", "LC",
   dh <-unlist(cusp_tip)
   oe <-unlist(out_enamel)
   landmark_XY <- data.frame(rbind(dh, oe))
-  #return(landmark_XY)
   # Get image dimensions and isolate some coordinates from landmark_XY
   img_wd_px <- dim(img)[1] # image width in pixels
   img_hg_px <- dim(img)[2] # image height in pixels
