@@ -49,8 +49,6 @@ toothR <- function(image_url, tooth_type = c("UI", "UC", "UP", "UM", "LI", "LC",
 
   # Resize and position of background image
   rG <- rasterGrob(img, interpolate = F,
-                  # Esto te posiciona el Dentine horn en el centro de la figura (50,50)
-                  # hjust = xpr0 / img_wd_px, vjust = 1 - (ypr0 / img_hg_px),
                   hjust = (xpr0 + (xpr100 - xpr0)/2) / img_wd_px,
                   vjust = 1 - (ypr0 / img_hg_px) + ((((xpr100-xpr0)/img_hg_px) * index_tooth[[tooth_type]]) / 2),
                   width = 1 / ((xpr100 - xpr0) / img_wd_px))
