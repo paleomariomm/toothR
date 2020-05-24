@@ -13,4 +13,6 @@ toothR(image_url = Images/microCT_1.png, tooth_type = "LM")
 \arguments{
   \item{image_url}{Set the URL of the image of the tooth you would like to reconstruct}
   \item{tooth_type}{set the tooth type}
+  \item{interval}{set the interval of the regression: prediction (default) / confidence}
+  \item{save_svg}{select if the ggplot should be saved or not as SVG format: yes (default) / no}
 }

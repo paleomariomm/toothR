@@ -36,7 +36,7 @@
 
   # Aplicamos la función stack_df() a cada elemento de la lista.
   xy_coord_stack <- lapply(xy_coord, stack_df)
-  save(xy_coord_stack, file = "data/xy_coord_stack.RData")
+  save(xy_coord_stack, file = "data/xy_coord_stack.rda")
 
   # Representamos gráficamente las regresiones
   # Generamos primero una función para representar las regresiones
