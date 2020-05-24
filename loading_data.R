@@ -9,7 +9,7 @@
   library(readr)
 
   # 2. Cargamos los datos desde el archivo de LibreOffice Calc ####
-  path <- "data/xy_coord_div.ods"
+  path <- "ods/xy_coord_div.ods"
 
   # Creamos una lista con los datos de todos los tipos de dientes
   xy_coord <- path %>%
